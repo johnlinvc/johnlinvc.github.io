@@ -1,23 +1,41 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+		<li><a href='//twitter.com/johnlinvc' target="_blank">Twitter</a> </li>
+		<li><a href="//tw.linkedin.com/pub/yu-hsiang-lin/35/259/246/" target="_blank">LinkedIn</a> </li>
   </ul>
+  <h3 class="text-muted">Johnlinvc</h3>
+</div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="row">
+	<div class="photo col-md-4 col-md-offset-1">
+		<img src="images/portrait.jpg" class="img-thumbnail" >
+	</div>
+	<div class="col-md-5 col-md-offset-1">
+		<h3 >
+			Hello, This is Johnlinvc
+		</h3>
+		<p>
+			I'm a software developer. Exploring new stuffs is my hobby. I write Ruby on Rails, Objective-C, and Angularjs for living. On the other hand, I write Erlang, Haskell, Node.js, and Scala for fun. I also know bunch of PLs such as C++, Java, Python. I'm familiar with cloud infrastructures and agile practices.
+		</p>
+	</div>
+</div>
 
+<div class="row">
+	<dl class="dl-horizontal col-md-12">
+		<dt>Github</dt>
+		<dd>
+			<a href="//github.com/johnlinvc" target="_blank">Github Profile</a>
+		</dd>
+		<dt>Twitter</dt>
+		<dd><a href="//twitter.com/johnlinvc" target="_blank">My Twitter</a> </dd>
+		<dt>Linkedin</dt>
+		<dd><a href="//tw.linkedin.com/pub/yu-hsiang-lin/35/259/246/" target="_blank">My Linkedin Profile</a></dd>
+  </dl>
+</div>
+
+<div class="footer">
+	<p class="pull-right">Copyleft 2014, Yu Hsiang, Lin</p>  
 </div>
